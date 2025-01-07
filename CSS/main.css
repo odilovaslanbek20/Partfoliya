@@ -59,18 +59,31 @@ main{
     padding-top: 130px;
 }
 
+.hero__cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero__title{
+    text-align: center;
+}
+
 .footer{
     width: 100%;
     height: auto;
-    padding: 40px;
+    padding: 30px;
     margin-top: 50px;
     background-color: black;
 }
 
 .footer p{
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     font-family: "Roboto";
+    line-height: 20px;
+    letter-spacing: 0.6px;
     font-weight: 700;
     text-align: center;
 }
@@ -138,11 +151,14 @@ main{
         top: 20px;
         right: 20px;
     }
+    .footer{
+        padding: 15px 0;
+    }
 }
 
 @media (max-width:372px) {
     .footer .container p{
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
