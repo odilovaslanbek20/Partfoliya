@@ -227,6 +227,22 @@ main {
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
   }
+  .contakt__item:hover {
+    background: none;
+    box-shadow: none;
+  }
+  
+  .contakt__item:hover i {
+    color: rgb(248, 251, 252);
+  }
+
+  .nav__link:hover {
+    background-color: transparent;
+  }
+
+  .nav__link:active {
+    background-color: transparent;
+  }
 }
 
 @media (max-width: 700px) {
