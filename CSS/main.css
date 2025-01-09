@@ -6,7 +6,12 @@
 }
 
 body {
-  background-color: rgb(219, 254, 252);
+  background: rgb(192, 237, 235);
+  background: radial-gradient(
+    circle,
+    rgba(192, 237, 235, 1) 29%,
+    rgba(122, 51, 125, 1) 98%
+  );
 }
 
 .karopka {
@@ -29,7 +34,7 @@ a {
   z-index: 9999;
 }
 
-.header .container-flud {
+.header .container-fluid {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -87,7 +92,8 @@ main {
 
 .hero__cards__left,
 .hero__cards__righr {
-  background-color: rgb(236, 229, 180);
+  background: rgb(249,252,252);
+  background: radial-gradient(circle, rgba(249,252,252,1) 28%, rgba(255,0,0,1) 100%);
   border-radius: 8px;
   border: 2px solid black;
   padding: 20px;
@@ -108,6 +114,11 @@ main {
   gap: 50px;
 }
 
+.main__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .swiper-slide {
   width: 100%;
   height: auto;
@@ -122,7 +133,7 @@ main {
   padding: 20px;
 }
 
-.swiper-slide:hover{
+.swiper-slide:hover {
   box-shadow: 0px 0px 20px 0px black;
 }
 
@@ -137,9 +148,83 @@ main {
   color: white;
 }
 
-@media (max-width:1024px) {
-  .main__cards{
-    grid-template-columns: repeat(4,1fr);
+.contakt {
+  background-color: blueviolet;
+  padding: 30px 0;
+  margin-top: 100px;
+}
+
+.contakt__title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.contakt__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.contakt__item {
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contakt__item:hover {
+  background-color: #f1e7e7;
+  transition: all 0.3s linear;
+  box-shadow: 0px 0px 10px 0px yellow;
+}
+
+.contakt__item:hover i {
+  color: black;
+}
+
+.contakt__item i {
+  font-size: 50px;
+  color: #fff;
+}
+
+.contakt__text {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contakt__text:hover {
+  color: rgb(255, 0, 0);
+}
+
+.contakt__text:active {
+  color: rgb(89, 10, 10);
+}
+
+.footer {
+  background-color: black;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.footer__text {
+  color: #fff;
+  font-size: 25px;
+  font-family: "Roboto";
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .main__cards {
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
   }
 }
@@ -149,10 +234,14 @@ main {
     flex-direction: column;
     gap: 0px;
   }
-  .main__cards{
-    grid-template-columns: repeat(3,1fr);
+  .main__cards {
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
+  .hero__title {
+    color: #fff;
+  }
+  
 }
 
 @media (max-width: 576px) {
@@ -237,12 +326,41 @@ main {
   .hero__cards__text__right {
     font-size: 15px;
   }
+  .contakt__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contakt__item{
+    width: 100%;
+  }
+  .footer {
+    padding: 15px 0;
+  }
+  .footer__text {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 500px) {
-  .main__cards{
-    grid-template-columns: repeat(2,1fr);
+  .main__cards {
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 }
 
+@media (max-width: 436px) {
+  .contakt__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 396px) {
+  .footer {
+    padding: 10px 0;
+  }
+  .footer__text {
+    font-size: 16px;
+  }
+}
