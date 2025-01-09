@@ -1,4 +1,4 @@
-let yosh = document.querySelector(".year");
+let yosh = document.querySelector(".yosh");
 let yil = 2008; 
 let oy = 12;    
 let kun = 20;   
@@ -17,22 +17,3 @@ if (oy1 < oy || (oy1 === oy && kun1 < kun)) {
 yosh.textContent = age;
 // ======================================================================
 
-let bars = document.querySelector(".nav__bars");
-let ext = document.querySelector(".nav__ext");
-let list = document.querySelector(".nav__list");
-
-bars.addEventListener("click", () => {
-    if(!list.classList.toggle("active")){
-        list.classList.remove("active")
-    }else{
-        list.classList.add("active")
-    }
-})
-
-ext.addEventListener("click", () => {
-    if(!list.classList.toggle("active")){
-        list.classList.remove("active")
-    }else{
-        list.classList.add("active")
-    }
-})

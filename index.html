@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./botstrap.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -17,61 +18,122 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container-flud karopka">
         <a href="./index.html">
           <img
-            class="header__logo"
-            src="../img/Screenshot_2025-01-04_at_09.29.51-removebg-preview.png"
+            src="./img/Screenshot_2025-01-08_at_18.30.23-removebg-preview.png"
             alt=""
             width="150"
-            height="60"
+            height="50"
           />
         </a>
 
-        <nav class="nav">
+        <div class="nav">
+          <input type="checkbox" id="check" />
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html">Men haqimda</a>
+              <a href="#" class="nav__link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="./portfoliya.html">Portfoliya</a>
+              <a href="#" class="nav__link">Partfoliya</a>
             </li>
             <li class="nav__item">
-              <a href="./gallery.html">Gallery</a>
+              <a href="#" class="nav__link">Gallery</a>
             </li>
-            <li class="nav__item">
-              <a href="./aloqa.html">Aloqa uchun</a>
-            </li>
-            <a class="nav__ext" href="#"><i class="fa-solid fa-xmark"></i></a>
+            <label for="check" class="nav__ext"
+              ><i class="fa-solid fa-xmark nav__x"></i
+            ></label>
           </ul>
-          <a class="nav__bars" href="#"><i class="fa-solid fa-bars"></i></a>
-        </nav>
+          <label for="check" class="nav__menu"
+            ><i class="fa-solid fa-bars nav__bars"></i
+          ></label>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="hero">
-        <div class="container">
-          <h1 class="hero__title">Men haqimda...</h1>
-          <div class="hero__cards">
-              <p class="hero__text"><strong>To‘liq ism/sharif:</strong> Odilov Aslanbek Odil o'g'li. </p>
-              <p class="hero__text"><strong>Tug‘ilgan sana:</strong> 2008-yi 20-dekabr.</p> 
-              <div style="display: flex;"><strong>Hozirda yoshi:</strong><p class="year">00</p></div>
-              <p class="hero__text"><strong>Manzil:</strong> Surxandaryo viloyat SHerobod tumani. </p>
-              <p class="hero__text"><strong>Kasb:</strong> Dasturchi.</p>
+        <h1 class="hero__title">About me</h1>
+        <div class="container-fluid karopka">
+          <div class="hero__cards__left">
+            <h2 class="hero__cards__heding__left">About me</h2>
+            <p class="hero__cards__text__left">
+              My full name is Odilov Aslanbek, and I was born on December 20,
+              2008. My father's full name is Raimnazarov Odil, and my mother's
+              full name is Raxmonberdiyeva Maxfuza. I currently live in Sherabad
+              district, Surxandarya region.I am currently
+              <span class="yosh">00</span> years old.
+            </p>
+          </div>
+          <div class="hero__cards__righr">
+            <h2 class="hero__cards__heding__right">My goals</h2>
+            <p class="hero__cards__text__right">
+              My second goal is to maintain balance in both my personal and
+              professional life. I strive to achieve success in life by properly
+              managing my time and motivating myself. Maintaining good health
+              and being ready for constant change are also important goals of
+              mine. Additionally, I have set the goal to broaden my worldview
+              and explore new cultures through travel. Engaging with people from
+              different backgrounds and learning about their way of life is
+              essential for my personal development. Furthermore, I believe that
+              continuous learning plays a significant role in personal growth.
+              Whether it's learning new skills, acquiring knowledge, or gaining
+              new experiences, I aim to keep evolving. I also value emotional
+              intelligence and believe that building strong, positive
+              relationships is key to a fulfilling life. Connecting with others,
+              understanding their emotions, and offering support are qualities I
+              prioritize. I hope to make a positive impact on those around me,
+              not just through my actions, but by being an inspiration to
+              others. In the future, I hope to achieve these goals and not only
+              improve my own life but also enhance the lives of those around me.
+              I envision creating a harmonious balance between my personal
+              well-being, professional achievements, and the happiness of my
+              loved ones. This holistic approach to life will, I believe, bring
+              lasting fulfillment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="main">
+        <div class="container-fluid karopka">
+          <div class="main__cards">
+            <div class="swiper-slide">
+              <img src="./img/html.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/css.png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/download-removebg-preview.png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/download-removebg-preview1.png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/tw-removebg-preview.png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/download__1_-removebg-preview.png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/download__2_-removebg-preview.png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/download__3_-removebg-preview.png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/git.png" alt="logo" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/githuo.png" alt="logo" />
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <p>
-          &copy;2025 Men haqimdagi barcha malumotlar qonuniy himoyalangan...
-        </p>
-      </div>
-    </footer>
-
+    <script src="./botstrap.js"></script>
     <script src="../Js/main.js"></script>
   </body>
 </html>
