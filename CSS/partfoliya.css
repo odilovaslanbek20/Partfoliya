@@ -1,0 +1,44 @@
+.portfoliya__list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.portfoliya__item{
+    width: 100%;
+}
+
+.card{
+    width: 100%;
+    border-radius: 30px;
+    background-color: aqua;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.parfoliya__link{
+    width: 100%;
+    height: 300px;
+    border: 3px solid rgb(249, 2, 2);
+    border-radius: 20px 20px 0 0;
+}
+
+.parfoliya__link img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+@media (max-width:1024px) {
+    .portfoliya__list{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:600px) {
+    .portfoliya__list{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
